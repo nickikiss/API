@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Task Manager</h1> 
+        <div id="task-list">
+            <label for="sort-option">Sortuj według:</label>
+            <select id="sort-option" onchange="loadTasks()">
+                <option value="date">Daty dodania</option>
+                <option value="state">Stanu</option>
+            </select>
+        </div>
+        <div id="add-task-form">
+            <input type="text" id="task-input" placeholder="Add Task">
+            <button onclick="addTask()">Add</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
